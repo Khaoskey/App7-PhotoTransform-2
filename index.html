@@ -142,10 +142,10 @@
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
       </script>
-      <canvas id="blueCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+      <canvas id="theBlueCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-        var blueCanvas = document.getElementById('blueCanvas');
-        var blueContext = canvas.getContext("2d");
+        var blueCanvas = document.getElementById('theBlueCanvas');
+        var blueContext = blueCanvas.getContext("2d");
         blueContext.font = '20pt Calibri';
         blueContext.fillStyle = "black";
         blueContext.fillText("Blue image will go here", 10, 20);
