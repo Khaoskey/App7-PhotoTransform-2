@@ -152,11 +152,12 @@
     blueContext.fillStyle ="black";    
     blueContext.fillText("Blue image will go here", 10, 20); // Changed y-coordinate to 50
     img.onload = function() {
-        blueContext.drawImage(img, 0, 40, canvas.width, canvas.height - 40); // Draw image below the text
+        blueContext.drawImage(img, 0, 40, blueCanvas.width, blueCanvas.height - 40); // Draw image below the text
         applyBlueShade();}; // Function to apply blue shading effect
     function applyBlueShade() {
         // Get image data from the myCanvas
-        var imageData = blueContext.getImageData(0, 0, canvas.width, canvas.height);        var data = imageData.data;
+        var imageData = blueContext.getImageData(0, 0, blueCanvas.width, blueCanvas.height);        
+        var data = imageData.data;
 
         // Loop through each pixel and set red and green channels to 0
         for (var i = 0; i < data.length; i += 4) {
