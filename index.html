@@ -134,22 +134,24 @@
       </div>
       <div id="messageDisplayArea"></div>
       
-      <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
-      <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "black";
-        context.fillText("Original image will go here", 10, 20);
-      </script>
-      <canvas id="theBlueCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
-      <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-        var blueCanvas = document.getElementById('theBlueCanvas');
-        var blueContext = blueCanvas.getContext("2d");
-        blueContext.font = '20pt Calibri';
-        blueContext.fillStyle = "black";
-        blueContext.fillText("Blue image will go here", 10, 20);
-      </script>
+      <canvas id="myCanvas" width="600" height="500" style="border:1px solid #d3d3d3; margin-bottom: 20px;"></canvas>
+<script> 
+    /* This script initiates the canvas and puts the text on the canvas"myCanvas" */
+    var canvas = document.getElementById('myCanvas');    
+    var context = canvas.getContext("2d");    
+    context.font = '20pt Calibri';    
+    context.fillStyle ="black";    
+    context.fillText("Original image will go here", 10, 20);</script>
+
+<canvas id="theBlueCanvas" width="600" height="500" style="border:1px solid #d3d3d3;"></canvas>
+<script> 
+    /* This script initiates the canvas and puts the text on the canvas"theBlueCanvas" */
+    var blueCanvas = document.getElementById('theBlueCanvas');    
+    var blueContext = blueCanvas.getContext("2d");    
+    blueContext.font = '20pt Calibri';    
+    blueContext.fillStyle ="black";    
+    blueContext.fillText("Blue image will go here", 10, 50); // Changed y-coordinate to 50
+</script>
 
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
